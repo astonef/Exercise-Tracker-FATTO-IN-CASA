@@ -2,7 +2,10 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config({ path: './credenze.env' });
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config({ path: './credenze.env' });
+}
+
 
 app.use(cors());
 app.use(express.static('public'));
