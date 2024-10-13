@@ -3,26 +3,27 @@
 }
 
 body {
-  font-family:sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 25px;
-  color: #222;
-  background-color: #f5f5f5;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 h1 {
   font-weight: bold;
-  
+  text-align: center;  /* Centrato */
 }
 
 p {
   max-width: 900px;
+  text-align: center;  /* Centrato */
 }
 
 form {
   margin-bottom: 25px;
   padding: 15px;
   background-color: #87D37C;
-  display: inline-block;
+  display: block; 
   width: 100%;
   max-width: 340px;
   border-radius: 5px;
@@ -55,5 +56,15 @@ code {
   font-family: monospace;
   font-size: 1.2em;
   background-color: #FFFEC4;
+  color: blue;
   padding: 2px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;  /* Disporre gli elementi in colonna */
+  justify-content: center; /* Centrare verticalmente */
+  align-items: center;     /* Centrare orizzontalmente */
+  height: 100vh;           /* Altezza totale della finestra */
+  text-align: center;
 }
